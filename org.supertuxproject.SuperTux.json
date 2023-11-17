@@ -96,6 +96,9 @@
                 "-DCMAKE_BUILD_TYPE=Release",
                 "-DIS_SUPERTUX_RELEASE=ON"
             ],
+            "post-install": [
+                "install -D updated-appdata.xml /app/share/appdata/${FLATPAK_ID}.appdata.xml"
+            ],
             "sources": [
                 {
                     "type": "git",
@@ -108,9 +111,11 @@
                     "path": "supertux-build-fixes.patch"
                 },
                 {
-                    "//": "Remember to delete this patch when the next SuperTux version gets released, as the appdata fix has also been merged into SuperTux's source code: https://github.com/SuperTux/supertux/pull/2668",
-                    "type": "patch",
-                    "path": "supertux-appdata.patch"
+
+                    "type": "file",
+                    "url": "https://raw.githubusercontent.com/SuperTux/supertux/master/supertux2.appdata.xml",
+                    "sha256": "f6e87e02dd11037fdade5e65ebb8c956140129e71dd4d00ec9435fc1dab1f096",
+                    "dest-filename": "updated-appdata.xml"
                 }
             ]
         }
