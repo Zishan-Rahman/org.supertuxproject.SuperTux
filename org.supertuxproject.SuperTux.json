@@ -97,7 +97,7 @@
                 "-DIS_SUPERTUX_RELEASE=ON"
             ],
             "post-install": [
-                "install -D updated-appdata.xml /app/share/appdata/${FLATPAK_ID}.appdata.xml"
+                "install -Dm644 updated-appdata.xml /app/share/appdata/${FLATPAK_ID}.appdata.xml"
             ],
             "sources": [
                 {
