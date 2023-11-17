@@ -113,7 +113,7 @@
                 {
 
                     "type": "file",
-                    "url": "https://raw.githubusercontent.com/SuperTux/supertux/master/supertux2.appdata.xml",
+                    "url": "https://raw.githubusercontent.com/SuperTux/supertux/12cf6c012e2bc1b91ef12fe56df1b169b2a5fa47/supertux2.appdata.xml",
                     "sha256": "f6e87e02dd11037fdade5e65ebb8c956140129e71dd4d00ec9435fc1dab1f096",
                     "dest-filename": "updated-appdata.xml"
                 }
