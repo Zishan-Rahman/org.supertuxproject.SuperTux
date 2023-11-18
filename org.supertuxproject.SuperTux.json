@@ -98,7 +98,7 @@
             ],
             "post-install": [
                 "install -Dm644 updated-appdata.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml",
-                "rsvg-convert icon.svg -w 128 -h 128 -a -f png -o 128.png",
+                "rsvg-convert supertux2.svg -w 128 -h 128 -a -f png -o 128.png",
                 "install -Dm644 128.png /app/share/icons/hicolor/128x128/apps/${FLATPAK_ID}.png"
             ],
             "sources": [
